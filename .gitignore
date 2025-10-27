@@ -40,9 +40,9 @@ build/
 /.settings/
 
 # --- Angular (ajusta la ruta si cambia)
-proyecto/web/proyecto-app-front/node_modules/
-proyecto/web/proyecto-app-front/dist/
-proyecto/web/pro
-/proyecto/web/proyecto-app-front/node_modules
-/proyecto/web/proyecto-app-front/.angular/cache
-/proyecto/web/proyecto-app-front/.angular/cache
+proyectoFinal/web/proyecto-app-front/node_modules/
+proyectoFinal/web/proyecto-app-front/dist/
+proyectoFinal/web/pro
+/proyectoFinal/web/proyecto-app-front/node_modules
+/proyectoFinal/web/proyecto-app-front/.angular/cache
+/proyectoFinal/web/proyecto-app-front/.angular/cache
