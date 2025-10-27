@@ -31,3 +31,15 @@ build/
 
 ### VS Code ###
 .vscode/
+# --- Java / Spring
+/target/
+/*.log
+/.idea/
+/.project
+/.classpath
+/.settings/
+
+# --- Angular (ajusta la ruta si cambia)
+proyecto/web/proyecto-app-front/node_modules/
+proyecto/web/proyecto-app-front/dist/
+proyecto/web/pro
