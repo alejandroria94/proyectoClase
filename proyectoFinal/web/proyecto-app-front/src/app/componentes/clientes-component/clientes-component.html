@@ -1,7 +1,7 @@
 <h2>Gestión de Clientes</h2>
 
 @if (editandoId() !== null) {
-<div class="edit-banner">✏️ Editando cliente #{{ editandoId() }}</div>
+<div class="edit-banner"> Editando cliente #{{ editandoId() }}</div>
 }
 
 <form [formGroup]="form" (ngSubmit)="guardar()" class="formulario">
@@ -10,7 +10,7 @@
         <label>Nombre</label>
         <input formControlName="nombre" placeholder="Nombre completo" />
         @if (form.get('nombre')?.touched && form.get('nombre')?.invalid) {
-        <small class="val">⚠️ El nombre es obligatorio.</small>
+        <small class="val"> El nombre es obligatorio.</small>
         }
     </div>
 

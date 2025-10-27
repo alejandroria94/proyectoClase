@@ -2,12 +2,11 @@ import { Component, OnInit, signal } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
-import { from } from 'rxjs';
+
 import { Cliente, ClientesService } from '../../services/clientes-service';
 
 @Component({
   selector: 'app-clientes-component',
-  standalone: true,
   imports: [CommonModule, ReactiveFormsModule],
   templateUrl: './clientes-component.html',
   styleUrls: ['./clientes-component.css']
@@ -22,14 +21,14 @@ export class ClientesComponent implements OnInit {
 
   form!: FormGroup;
 
-  constructor(private clientesService: ClientesService, private fb: FormBuilder) {}
+  constructor(private clientesService: ClientesService, private fb: FormBuilder) { }
 
   ngOnInit(): void {
     this.form = this.fb.group({
       nombre: ['', Validators.required],
       correo: ['', [Validators.required, Validators.email]],
       telefono: ['', [Validators.required, Validators.pattern(/^\d{7,15}$/)]],
-      fechaRegistro: [new Date().toISOString().substring(0, 10),[Validators.required]]
+      fechaRegistro: [new Date().toISOString().substring(0, 10), [Validators.required]]
     });
     this.cargarClientes();
   }
