@@ -5,7 +5,7 @@
 }
 
 <form [formGroup]="form" (ngSubmit)="guardar()" class="formulario">
-    <!-- Campos como antes -->
+ 
     <div class="fila">
         <label>Nombre</label>
         <input formControlName="nombre" placeholder="Nombre completo" />
@@ -39,7 +39,7 @@
         <input formControlName="fechaRegistro" type="date" />
         @if (form.get('fechaRegistro')?.touched && form.get('fechaRegistro')?.hasError('required')) {
         <small class="val"> La fecha es obligatoria.</small>
-        } 
+        }
     </div>
 
     <div class="acciones-form">
