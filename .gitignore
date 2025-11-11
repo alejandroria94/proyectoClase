@@ -46,3 +46,5 @@ proyectoFinal/web/pro
 /proyectoFinal/web/proyecto-app-front/node_modules
 /proyectoFinal/web/proyecto-app-front/.angular/cache
 /proyectoFinal/web/proyecto-app-front/.angular/cache
+proyectoFinal\web\node_modules\*
+/proyectoFinal/web/node_modules
